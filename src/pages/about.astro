@@ -1,20 +1,71 @@
+---
+import '../styles/global.css';
+const pageTitle = "Sobre Mí";
+
+const identity = {
+    firstname : "Jader",
+    country : "Colombia",
+    occupation : "Tecnico de Sistemas",
+    hobbies : ["Ciencia Ficcion", "Tecnologias Web"]
+};
+
+const skills = ["HTML", "CSS", "JavaScript", "Python", "Astro", "Django"];
+
+const happy = true;
+const finished = false;
+const goal = 3;
+
+const skillcolor = "navy";
+const fontWeight = "bold";
+const textCase = "uppercase";
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>About</title>
+	<title>{pageTitle}</title>
+    <!-- <style define:vars={{skillcolor, fontWeight, textCase}}>
+        h1{
+            color: purple;
+            font-size: 4rem;
+        }
+        .skill{
+            color: var(--skillcolor);
+            font-weight: var(--fontWeight);
+            text-transform: var(--textCase);
+        }
+    </style> -->
 </head>
 <body>
-    <a href="/">Inicio</a>
+
+    <nav class="navbar">
+        <a href="/">Inicio</a>
     <a href="/about/">Sobre mi</a>
+    
     <a href="/blog">Blog</a>
 
+    </nav>
 	<h1>Sobre Mí</h1>
     <h2>... ¡y mi nuevo sitio Astro !</h2>
 
     <p>Estoy trabajando en tutorial introductorio de Astro. Esta es la segunda página de mi sitio web, ¡y es la primera que he contruido yo mismo</p>
-
+    
     <p>Este sitio se irá sactualizando a medida que vaya completando más partes del tutorial, ¡ así que no dejes de visitarlo para ver como va mi viaje !</p>
+
+    <p>He aquí algunos datos sobre mi :</p>
+
+    <ul>
+        <li>Me llamo {identity.firstname}.</li>
+        <li>Vivo en {identity.country} y trabajo como {identity.occupation}.</li>
+        {identity.hobbies.length >= 2 &&
+        <li>Dos de mis aficiones son: La {identity.hobbies[0]} y las {identity.hobbies[1]}</li>
+        }
+    </ul>
+
+    <p>Mis habilidades son :</p>
+    <ul>
+        {skills.map((skill) => <li class="skill">{skill}</li>)}
+    </ul>
 </body>
 </html>

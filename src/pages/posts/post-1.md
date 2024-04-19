@@ -12,6 +12,7 @@ tags: ["astro", "bloguear", "aprender en público"]
 
 Publicado el: 2024-04-11
 
+
 ¡ Biemvenido a mi _nuevo blog_ sobre el aprendizaje de Astro ! Aquí voy a compartir mi viaje aprendizaje a medida que construyo un nuevo sitio web.
 
 ## Lo que he conseguido
