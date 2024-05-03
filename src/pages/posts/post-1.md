@@ -1,5 +1,5 @@
 ---
-title: 'Mi primera publicacion en el blog'
+title: 'VisBug, una interesante y util extension de google para desarrolldores web'
 pubDate: 2024-04-11
 description : 'Esta es la primera publicacion en mi blog de Astro.'
 author : 'Dannjader'
