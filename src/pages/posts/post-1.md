@@ -1,7 +1,8 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'VisBug, una interesante y util extension de google para desarrolldores web'
 pubDate: 2024-04-11
-description : 'Esta es la primera publicacion en mi blog de Astro.'
+description : 'Herramientas de diseño de navegadores de código abierto.'
 author : 'Dannjader'
 image :
      url: 'https://docs.astro.build/assets/full-logo-light.png'
@@ -9,8 +10,6 @@ image :
 tags: ["astro", "bloguear", "aprender en público"]
 ---
 # Mi Primera Publicacion en el Blog
-
-Publicado el: 2024-04-11
 
 
 ¡ Biemvenido a mi _nuevo blog_ sobre el aprendizaje de Astro ! Aquí voy a compartir mi viaje aprendizaje a medida que construyo un nuevo sitio web.
